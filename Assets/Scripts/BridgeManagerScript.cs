@@ -27,13 +27,17 @@ public class BridgeManagerScript : MonoBehaviour
 		
 		foreach(var segment in _bridgeRoadSegments)
 		{
+			print(segment.SegmentStatus);
 			_health += (int)segment.SegmentStatus;
 		}
 		
 		foreach(var segment in _bridgePierSegments)
 		{
+			print(segment.SegmentStatus);
 			_health += (int)segment.SegmentStatus;
 		}
+		
+		print("Current health:" + _health);
 		
 		if (_health <= 0)
 		{
@@ -41,9 +45,19 @@ public class BridgeManagerScript : MonoBehaviour
 		}
 	}
 
-	private static void GameOver()
+	private void GameOver()
 	{
 		print("Game Over!");
+		PauseGame();
+	}
+
+	private void PauseGame()
+	{
+		Paused = !Paused;
+				
+		BoiVoadorScript.Paused = Paused;
+		PlayerScript.Paused = Paused;
+		BridgeSegmentScript.Paused = Paused;
 	}
 	
 	// Update is called once per frame
@@ -51,16 +65,13 @@ public class BridgeManagerScript : MonoBehaviour
 	{
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
-			Paused = !Paused;
-				
-			BoiVoadorScript.Paused = Paused;
-			PlayerScript.Paused = Paused;
-			BridgeSegmentScript.Paused = Paused;
+			PauseGame();
 		}
 		
 		if (Paused) return;
 		
 		UpdateBridgeHealth();
 		HealthBar.fillAmount = _health / _maxHealth;
+		print("fill amount: " + HealthBar.fillAmount);
 	}
 }

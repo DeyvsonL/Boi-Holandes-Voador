@@ -4,9 +4,9 @@ using Random = UnityEngine.Random;
 
 public class BridgeSegmentScript : MonoBehaviour
 {
-	[SerializeField] private float _initialChance = 0.2f;
+	[SerializeField] private float _initialChance = 0.1f;
 	[SerializeField] private float _finalChance = 0.6f;
-	public SegmentStatusEnum SegmentStatus { get; private set; }
+	public SegmentStatusEnum SegmentStatus = SegmentStatusEnum.Healthy;
 	
 	public enum SegmentStatusEnum { Destroyed, Deteriorated, Healthy }
 
@@ -14,14 +14,16 @@ public class BridgeSegmentScript : MonoBehaviour
 
 	private float _timeSinceStartConsideringPauses;
 
+	private SpriteRenderer _spriteRenderer;
+
     [SerializeField]
     private BoiVoadorScript boiVoador;
 
 	// Use this for initialization
 	private void Start ()
 	{
+		_spriteRenderer = GetComponent<SpriteRenderer>();
 		_timeSinceStartConsideringPauses = 0;
-		SegmentStatus = SegmentStatusEnum.Healthy;
 	}
 
 	// Update is called once per frame
@@ -50,6 +52,7 @@ public class BridgeSegmentScript : MonoBehaviour
 		{
 			case SegmentStatusEnum.Healthy:
 				SegmentStatus = SegmentStatusEnum.Deteriorated;
+				_spriteRenderer.color = new Color(0.55f, 0f, 0f);
 				break;
 			case SegmentStatusEnum.Deteriorated:
 				SegmentStatus = SegmentStatusEnum.Destroyed;
