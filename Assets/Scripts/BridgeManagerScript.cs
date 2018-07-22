@@ -36,7 +36,7 @@ public class BridgeManagerScript : MonoBehaviour
 			_health += (int)segment.SegmentStatus;
 		}
 		
-		print("Current health:" + _health);
+//		print("Current health:" + _health);
 		
 		if (_health <= 0)
 		{
@@ -71,6 +71,6 @@ public class BridgeManagerScript : MonoBehaviour
 		
 		UpdateBridgeHealth();
 		HealthBar.fillAmount = _health / _maxHealth;
-		print("fill amount: " + HealthBar.fillAmount);
+	//	print("fill amount: " + HealthBar.fillAmount);
 	}
 }
