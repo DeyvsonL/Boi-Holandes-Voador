@@ -4,9 +4,9 @@ using Random = UnityEngine.Random;
 
 public class BridgeSegmentScript : MonoBehaviour
 {
-	[SerializeField] private float _initialChance = 0.2f;
-	[SerializeField] private float _finalChance = 0.6f;
-	public SegmentStatusEnum SegmentStatus { get; private set; }
+	[SerializeField] private float _initialChance = 0.001f;
+	[SerializeField] private float _finalChance = 0.006f;
+	public SegmentStatusEnum SegmentStatus = SegmentStatusEnum.Healthy;
 	
 	public enum SegmentStatusEnum { Destroyed, Deteriorated, Healthy }
 
@@ -14,14 +14,20 @@ public class BridgeSegmentScript : MonoBehaviour
 
 	private float _timeSinceStartConsideringPauses;
 
+	private SpriteRenderer _spriteRenderer;
+
+	public Sprite destroyedSprite;
+	public Sprite deterioratedSprite;
+	public Sprite healthySprite;
+
     [SerializeField]
     private BoiVoadorScript boiVoador;
 
 	// Use this for initialization
 	private void Start ()
 	{
+		_spriteRenderer = GetComponent<SpriteRenderer>();
 		_timeSinceStartConsideringPauses = 0;
-		SegmentStatus = SegmentStatusEnum.Healthy;
 	}
 
 	// Update is called once per frame
@@ -49,9 +55,11 @@ public class BridgeSegmentScript : MonoBehaviour
 		switch (SegmentStatus)
 		{
 			case SegmentStatusEnum.Healthy:
+				_spriteRenderer.sprite =  deterioratedSprite;
 				SegmentStatus = SegmentStatusEnum.Deteriorated;
 				break;
 			case SegmentStatusEnum.Deteriorated:
+				_spriteRenderer.sprite =  destroyedSprite;
 				SegmentStatus = SegmentStatusEnum.Destroyed;
 				break;
 			case SegmentStatusEnum.Destroyed:
@@ -69,9 +77,11 @@ public class BridgeSegmentScript : MonoBehaviour
 			case SegmentStatusEnum.Healthy:
 				break;
 			case SegmentStatusEnum.Deteriorated:
+				_spriteRenderer.sprite =  healthySprite;
 				SegmentStatus = SegmentStatusEnum.Healthy;
 				break;
 			case SegmentStatusEnum.Destroyed:
+				_spriteRenderer.sprite =  deterioratedSprite;
 				SegmentStatus = SegmentStatusEnum.Deteriorated;
 				break;
 			default:
