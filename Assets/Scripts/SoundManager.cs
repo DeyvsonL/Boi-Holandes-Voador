@@ -21,14 +21,12 @@ public class SoundManager : MonoBehaviour {
 
     private void Start()
     {
-        var playTime = initLatency;
 
-        gameMusicIntro.PlayDelayed( ( float )playTime );
-        secondGameMusicIntro.PlayDelayed( ( float )playTime );
-        playTime += ( double )gameMusicIntro.clip.length;
+        gameMusicIntro.Play();
+        secondGameMusicIntro.Play();
 
-        gameMusicLoop.PlayDelayed( ( float )playTime );    
-        secondGameMusicLoop.PlayDelayed( ( float )playTime );    
+        gameMusicLoop.PlayDelayed( gameMusicIntro.clip.length );    
+        secondGameMusicLoop.PlayDelayed( secondGameMusicIntro.clip.length );    
 
 
         secondGameMusicIntro.mute = true;
