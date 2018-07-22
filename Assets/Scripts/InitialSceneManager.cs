@@ -9,11 +9,11 @@ public class InitialSceneManager : MonoBehaviour
 	public DialogueTriggerScript outroScript;
 	
 	private void Start () {
-		
+		introScript.TriggerDialogue();
 	}
-	
-	private void Update ()
-	{		
+
+	void Update()
+	{
 		
 	}
 }

@@ -929,9 +929,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1967165812}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cc66796a4eac47769f0f0bae2be51f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 221366a07240b194dab440e19342d5c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  introScript: {fileID: 2104494151}
+  outroScript: {fileID: 0}
 --- !u!1 &2016151741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,6 +1025,8 @@ MonoBehaviour:
   Nassau: {fileID: 1817831662}
   Guilherme: {fileID: 756893680}
   Cristina: {fileID: 800248558}
+  Finished: 1
+  SceneToLoadWhenFinished: TimeTravelScene
 --- !u!4 &2104494150
 Transform:
   m_ObjectHideFlags: 0

@@ -18,6 +18,10 @@ public class DialogueManagerScript : MonoBehaviour
 	public Image Nassau;
 	public Image Guilherme;
 	public Image Cristina;
+
+	public bool Finished = true;
+
+	public string SceneToLoadWhenFinished;
 	
 	void Awake()
 	{
@@ -26,7 +30,6 @@ public class DialogueManagerScript : MonoBehaviour
 
 	void Start()
 	{
-		Animator.SetTrigger("IniciarDialogo");
 	}
 
 	void Update()
@@ -48,6 +51,9 @@ public class DialogueManagerScript : MonoBehaviour
 	public void StartDialogue(DialogueScript dialogue)
 	{
 		//Animator.SetBool("IsOpen", true);
+		Finished = false;
+		
+		Animator.SetTrigger("IniciarDialogo");
 		
 		DialogueQueue.Clear();
 
@@ -105,7 +111,8 @@ public class DialogueManagerScript : MonoBehaviour
 	private void EndDialogue()
 	{
 		Animator.SetTrigger("TerminarDialogo");
-		//SceneManager.LoadScene("Tela2");
+		SceneManager.LoadScene(SceneToLoadWhenFinished);
+		Finished = true;
 	}
 
 }
