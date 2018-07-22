@@ -91,23 +91,27 @@ public class BridgeSegmentScript : MonoBehaviour
 		}
 	}
 
-	public void Repair()
+	public float Repair()
 	{
-		print("Repairing bridge segment!");
+        var result = 1.0f;
 		switch (_segmentStatus)
 		{
 			case SegmentStatusEnum.Healthy:
-				break;
+                result = 1.4f;
+                break;
 			case SegmentStatusEnum.Deteriorated:
 				_spriteRenderer.sprite =  healthySprite;
 				_segmentStatus = SegmentStatusEnum.Healthy;
+                result = 1.15f;
 				break;
 			case SegmentStatusEnum.Destroyed:
 				_spriteRenderer.sprite =  deterioratedSprite;
 				_segmentStatus = SegmentStatusEnum.Deteriorated;
+                result = 1.0f;
 				break;
 			default:
 				throw new ArgumentOutOfRangeException();
 		}
+        return result;
 	}
 }

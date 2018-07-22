@@ -11,9 +11,18 @@ public class PlayerScript : MonoBehaviour
 
 	private int _playerPosition;
 	public static bool Paused = false;
-	
-	// Use this for initialization
-	private void Start () {
+
+    private SoundManager soundManager;
+
+    [SerializeField]
+    private int playerIndex;
+
+    private void Awake()
+    {
+        soundManager = FindObjectOfType<SoundManager>();
+    }
+    // Use this for initialization
+    private void Start () {
 		SetPosition(0);
 	}
 
@@ -52,7 +61,9 @@ public class PlayerScript : MonoBehaviour
 		if (Input.GetKeyDown(ActionButton))
 		{
 			var selectedBridgeSegment = Objects[_playerPosition].GetComponent<BridgeSegmentScript>();
-			selectedBridgeSegment.Repair();
+            var pitchValue = selectedBridgeSegment.Repair();
+            if (playerIndex == 0) soundManager.PlayHammerOne(pitchValue);
+            else soundManager.PlayHammerTwo(pitchValue);
 		}
 	}
 }
