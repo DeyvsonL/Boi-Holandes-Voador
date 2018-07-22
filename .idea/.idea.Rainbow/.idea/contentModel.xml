@@ -92,6 +92,7 @@
           <e p="FacebookScript.cs" t="Include" />
           <e p="GameOverMenuScript.cs" t="Include" />
           <e p="InitialSceneManager.cs" t="Include" />
+          <e p="LightManager.cs" t="Include" />
           <e p="MainMenuScript.cs" t="Include" />
           <e p="PeopleManager.cs" t="Include" />
           <e p="PersonMoviment.cs" t="Include" />
