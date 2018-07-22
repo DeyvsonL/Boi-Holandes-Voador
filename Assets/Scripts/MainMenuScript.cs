@@ -4,38 +4,100 @@ using UnityEngine.UI;
 
 public class MainMenuScript : MonoBehaviour
 {
+	
+	public GameObject TutorialPergaminho;
+	public GameObject Boi;
 
-	public Button StartButton;
-	public Button TutorialButton;
-	public Button CreditsButton;
+	public GameObject StartButton;
+	public GameObject TutorialButton;
+	public GameObject CreditsButton;
+
+	public GameObject VoltarCreditsButton;
+	public GameObject VoltarTutorialButton;
+
+	public GameObject CreditsPergaminho;
+
+	private GameObject _previouslySelectedButton;
 
 	public void Start()
 	{
-		var newComecarSprite = Resources.Load<Sprite>("Sprites/COMEÇAR_ativo");
-		var comecarST = new SpriteState();
-		comecarST.disabledSprite = newComecarSprite;
-		comecarST.highlightedSprite = newComecarSprite;
-		comecarST.pressedSprite = newComecarSprite;
-		StartButton.spriteState = comecarST; 
+		_previouslySelectedButton = StartButton;
 		
-		var newTutorialSprite = Resources.Load<Sprite>("Sprites/TUTORIAL_ativo");
-		var tutorialST = new SpriteState();
-		tutorialST.disabledSprite = newTutorialSprite;
-		tutorialST.highlightedSprite = newTutorialSprite;
-		tutorialST.pressedSprite = newTutorialSprite;
-		TutorialButton.spriteState = tutorialST; 
+		TutorialPergaminho.SetActive(false);
+		CreditsPergaminho.SetActive(false);
+		Boi.SetActive(true);
 		
-		var newSprite = Resources.Load<Sprite>("Sprites/CREDITOS_ativo");
-		var creditosSt = new SpriteState();
-		creditosSt.disabledSprite = newSprite;
-		creditosSt.highlightedSprite = newSprite;
-		creditosSt.pressedSprite = newSprite;
-		CreditsButton.spriteState = creditosSt; 
+		VoltarTutorialButton.SetActive(false);
+		VoltarCreditsButton.SetActive(false);
 	}
 
 	public void StartGame()
 	{
 		SceneManager.LoadScene("InitialScene");
+	}
+
+	public void Tutorial()
+	{
+		_previouslySelectedButton = TutorialButton;
+		
+		TutorialPergaminho.SetActive(true);
+		Boi.SetActive(false);
+		
+		StartButton.SetActive(false);
+		TutorialButton.SetActive(false);
+		CreditsButton.SetActive(false);
+		
+		VoltarTutorialButton.SetActive(true);
+		VoltarTutorialButton.GetComponent<Button>().Select ();
+		VoltarTutorialButton.GetComponent<Button>().OnSelect (null);
+	}
+
+	public void VoltarTutorial()
+	{
+		TutorialPergaminho.SetActive(false);
+		Boi.SetActive(true);
+		
+		StartButton.SetActive(true);
+		TutorialButton.SetActive(true);
+		CreditsButton.SetActive(true);
+		
+		VoltarTutorialButton.SetActive(false);
+		
+		_previouslySelectedButton.GetComponent<Button>().Select ();
+		_previouslySelectedButton.GetComponent<Button>().OnSelect (null);
+	}
+
+	public void Credits()
+	{
+		_previouslySelectedButton = CreditsButton;
+		
+		CreditsPergaminho.SetActive(true);
+		Boi.SetActive(false);
+		
+		StartButton.SetActive(false);
+		TutorialButton.SetActive(false);
+		CreditsButton.SetActive(false);
+		
+		VoltarCreditsButton.SetActive(true);
+		
+		VoltarCreditsButton.GetComponent<Button>().Select ();
+		VoltarCreditsButton.GetComponent<Button>().OnSelect (null);
+	}
+
+	public void VoltarCredits()
+	{
+		
+		CreditsPergaminho.SetActive(false);
+		Boi.SetActive(true);
+		
+		StartButton.SetActive(true);
+		TutorialButton.SetActive(true);
+		CreditsButton.SetActive(true);
+		
+		VoltarCreditsButton.SetActive(false);
+		
+		_previouslySelectedButton.GetComponent<Button>().Select ();
+		_previouslySelectedButton.GetComponent<Button>().OnSelect (null);
 	}
 
 	public void Quit()
