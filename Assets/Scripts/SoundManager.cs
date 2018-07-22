@@ -25,6 +25,15 @@ public class SoundManager : MonoBehaviour {
     [SerializeField]
     private AudioSource hammerTwo;
 
+    [SerializeField]
+    private AudioSource cowOne;
+
+    [SerializeField]
+    private AudioSource cowTwo;
+
+    [SerializeField]
+    private Vector2 cowInterval;
+
     private void Start()
     {
 
@@ -37,6 +46,8 @@ public class SoundManager : MonoBehaviour {
 
         secondGameMusicIntro.mute = true;
         Invoke("UnmuteSecondMusic", 65);
+        Invoke("Cow", UnityEngine.Random.Range(cowInterval.x, cowInterval.y));
+
     }
 
     void UnmuteSecondMusic()
@@ -54,6 +65,16 @@ public class SoundManager : MonoBehaviour {
     {
         hammerTwo.pitch = pitch;
         hammerTwo.Play();
+    }
+
+    private void Cow()
+    {
+        var firstCow = UnityEngine.Random.value > 0.5 ? true : false;
+
+        if (firstCow) cowOne.Play();
+        else cowTwo.Play();
+
+        Invoke("Cow", UnityEngine.Random.Range(cowInterval.x, cowInterval.y));
     }
 
 
