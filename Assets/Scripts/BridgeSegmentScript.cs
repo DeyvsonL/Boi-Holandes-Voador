@@ -7,8 +7,10 @@ public class BridgeSegmentScript : MonoBehaviour
 	[SerializeField] private float _initialChance = 0.001f;
 	[SerializeField] private float _finalChance = 0.006f;
 	private SegmentStatusEnum _segmentStatus = SegmentStatusEnum.Healthy;
-		
-	public ParticleSystem particleSystem;
+	
+	
+	
+	private ParticleSystem particleSystem;
 	
 	public enum SegmentStatusEnum { Healthy = 0, Deteriorated = 1, Destroyed = 2 }
 
@@ -22,6 +24,8 @@ public class BridgeSegmentScript : MonoBehaviour
 	public Sprite deterioratedSprite;
 	public Sprite healthySprite;
 
+	[SerializeField] private bool isPillar;
+
     [SerializeField]
     private BoiVoadorScript boiVoador;
 
@@ -32,9 +36,17 @@ public class BridgeSegmentScript : MonoBehaviour
 	}
 
 	// Use this for initialization
-	private void Start ()
+	private void Start()
 	{
-		_spriteRenderer = GetComponent<SpriteRenderer>();
+
+		var resourceString = isPillar ? "TijoloParticleSystem" : "ChaoParticleSystem";
+		var obj = Instantiate(Resources.Load(resourceString), gameObject.transform) as GameObject;
+		if (obj != null) particleSystem = obj.GetComponent<ParticleSystem>();
+		else Debug.Log("Particle system not found!");
+
+
+
+	_spriteRenderer = GetComponent<SpriteRenderer>();
 		_timeSinceStartConsideringPauses = 0;
 	}
 

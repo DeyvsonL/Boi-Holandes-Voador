@@ -201,11 +201,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: bbe44b6061bb7024f809a4a3aafc2391, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: 160c3805f3da0b9428a0343538598da0, type: 3}
   healthySprite: {fileID: 21300000, guid: 2c2b103f7bc4a4348a5c1d3df1dd6cb4, type: 3}
+  isPillar: 1
   boiVoador: {fileID: 1142766061}
 --- !u!1 &51376248
 GameObject:
@@ -297,7 +296,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -321,11 +320,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   healthySprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
+  isPillar: 0
   boiVoador: {fileID: 1142766061}
 --- !u!1 &74700759
 GameObject:
@@ -391,7 +389,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2749a7eba35a53c45b4c99b5f6bb3a35, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -708,11 +706,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: bbe44b6061bb7024f809a4a3aafc2391, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: 160c3805f3da0b9428a0343538598da0, type: 3}
   healthySprite: {fileID: 21300000, guid: 2c2b103f7bc4a4348a5c1d3df1dd6cb4, type: 3}
+  isPillar: 1
   boiVoador: {fileID: 1142766061}
 --- !u!1 &318719136
 GameObject:
@@ -804,7 +801,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -903,11 +900,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   healthySprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
+  isPillar: 0
   boiVoador: {fileID: 1142766061}
 --- !u!114 &393037254
 MonoBehaviour:
@@ -977,11 +973,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   healthySprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
+  isPillar: 0
   boiVoador: {fileID: 1142766061}
 --- !u!61 &408289888
 BoxCollider2D:
@@ -1042,7 +1037,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1230,11 +1225,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: bbe44b6061bb7024f809a4a3aafc2391, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: 160c3805f3da0b9428a0343538598da0, type: 3}
   healthySprite: {fileID: 21300000, guid: 2c2b103f7bc4a4348a5c1d3df1dd6cb4, type: 3}
+  isPillar: 1
   boiVoador: {fileID: 1142766061}
 --- !u!1 &519420028
 GameObject:
@@ -1427,11 +1421,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: 56a5e7670e2451a499c64c5aea54c57e, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: 40aa6eebf4f99194ea1df1195400acef, type: 3}
   healthySprite: {fileID: 21300000, guid: ca7ace5728faa82468d21c64695a49a2, type: 3}
+  isPillar: 1
   boiVoador: {fileID: 1142766061}
 --- !u!1 &619307444
 GameObject:
@@ -1575,11 +1568,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: bbe44b6061bb7024f809a4a3aafc2391, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: 160c3805f3da0b9428a0343538598da0, type: 3}
   healthySprite: {fileID: 21300000, guid: 2c2b103f7bc4a4348a5c1d3df1dd6cb4, type: 3}
+  isPillar: 1
   boiVoador: {fileID: 1142766061}
 --- !u!1 &736347765
 GameObject:
@@ -1612,11 +1604,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   healthySprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
+  isPillar: 0
   boiVoador: {fileID: 1142766061}
 --- !u!61 &736347767
 BoxCollider2D:
@@ -1677,7 +1668,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1744,11 +1735,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: bbe44b6061bb7024f809a4a3aafc2391, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: 160c3805f3da0b9428a0343538598da0, type: 3}
   healthySprite: {fileID: 21300000, guid: 2c2b103f7bc4a4348a5c1d3df1dd6cb4, type: 3}
+  isPillar: 1
   boiVoador: {fileID: 1142766061}
 --- !u!212 &772793415
 SpriteRenderer:
@@ -1883,11 +1873,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: 56a5e7670e2451a499c64c5aea54c57e, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: 40aa6eebf4f99194ea1df1195400acef, type: 3}
   healthySprite: {fileID: 21300000, guid: ca7ace5728faa82468d21c64695a49a2, type: 3}
+  isPillar: 1
   boiVoador: {fileID: 1142766061}
 --- !u!1 &951888264
 GameObject:
@@ -2114,7 +2103,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2138,11 +2127,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   healthySprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
+  isPillar: 0
   boiVoador: {fileID: 1142766061}
 --- !u!1 &1142766058
 GameObject:
@@ -2488,7 +2476,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2512,11 +2500,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   healthySprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
+  isPillar: 0
   boiVoador: {fileID: 1142766061}
 --- !u!1 &1343272052
 GameObject:
@@ -2605,11 +2592,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: bbe44b6061bb7024f809a4a3aafc2391, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: 160c3805f3da0b9428a0343538598da0, type: 3}
   healthySprite: {fileID: 21300000, guid: 2c2b103f7bc4a4348a5c1d3df1dd6cb4, type: 3}
+  isPillar: 1
   boiVoador: {fileID: 1142766061}
 --- !u!1 &1375925312
 GameObject:
@@ -2774,11 +2760,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: bbe44b6061bb7024f809a4a3aafc2391, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: 160c3805f3da0b9428a0343538598da0, type: 3}
   healthySprite: {fileID: 21300000, guid: 2c2b103f7bc4a4348a5c1d3df1dd6cb4, type: 3}
+  isPillar: 1
   boiVoador: {fileID: 1142766061}
 --- !u!1 &1553964304
 GameObject:
@@ -2870,7 +2855,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2894,11 +2879,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   healthySprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
+  isPillar: 0
   boiVoador: {fileID: 1142766061}
 --- !u!1 &1596667785
 GameObject:
@@ -2988,11 +2972,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: bbe44b6061bb7024f809a4a3aafc2391, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: 160c3805f3da0b9428a0343538598da0, type: 3}
   healthySprite: {fileID: 21300000, guid: 2c2b103f7bc4a4348a5c1d3df1dd6cb4, type: 3}
+  isPillar: 1
   boiVoador: {fileID: 1142766061}
 --- !u!1 &1636349416
 GameObject:
@@ -3082,11 +3065,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: 56a5e7670e2451a499c64c5aea54c57e, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: 40aa6eebf4f99194ea1df1195400acef, type: 3}
   healthySprite: {fileID: 21300000, guid: ca7ace5728faa82468d21c64695a49a2, type: 3}
+  isPillar: 1
   boiVoador: {fileID: 1142766061}
 --- !u!1 &1651518017
 GameObject:
@@ -3204,11 +3186,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: 56a5e7670e2451a499c64c5aea54c57e, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: 40aa6eebf4f99194ea1df1195400acef, type: 3}
   healthySprite: {fileID: 21300000, guid: ca7ace5728faa82468d21c64695a49a2, type: 3}
+  isPillar: 1
   boiVoador: {fileID: 1142766061}
 --- !u!1 &1677370307
 GameObject:
@@ -3409,7 +3390,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3433,11 +3414,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   healthySprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
+  isPillar: 0
   boiVoador: {fileID: 1142766061}
 --- !u!1 &1790924020
 GameObject:
@@ -3577,7 +3557,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -3625,7 +3605,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3649,11 +3629,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   healthySprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
+  isPillar: 0
   boiVoador: {fileID: 1142766061}
 --- !u!1 &1853837522
 GameObject:
@@ -3793,7 +3772,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2749a7eba35a53c45b4c99b5f6bb3a35, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3893,7 +3872,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2749a7eba35a53c45b4c99b5f6bb3a35, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4017,9 +3996,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  SegmentStatus: 2
-  particleSystem: {fileID: 0}
   destroyedSprite: {fileID: 21300000, guid: 56a5e7670e2451a499c64c5aea54c57e, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: 40aa6eebf4f99194ea1df1195400acef, type: 3}
   healthySprite: {fileID: 21300000, guid: ca7ace5728faa82468d21c64695a49a2, type: 3}
+  isPillar: 1
   boiVoador: {fileID: 1142766061}
