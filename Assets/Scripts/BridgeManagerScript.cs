@@ -15,6 +15,9 @@ public class BridgeManagerScript : MonoBehaviour
 
 	public bool Paused;
 
+    [SerializeField]
+    private BoiVoadorScript boiVoadorScript;
+
 	// Use this for initialization
 	private void Start ()
 	{
@@ -60,9 +63,12 @@ public class BridgeManagerScript : MonoBehaviour
 
 	private void GameOver()
 	{
-		//PauseGame();
-		SceneManager.LoadScene("GameOverScene");
-	}
+        //PauseGame();
+        boiVoadorScript.Finished = true;
+        SceneManager.LoadScene("GameOverScene");
+
+
+    }
 
 	private void PauseGame()
 	{
@@ -76,6 +82,7 @@ public class BridgeManagerScript : MonoBehaviour
 	// Update is called once per frame
 	private void Update ()
 	{
+        if (boiVoadorScript.Finished) return;
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
 			PauseGame();

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class BoiVoadorScript : MonoBehaviour
@@ -13,6 +14,11 @@ public class BoiVoadorScript : MonoBehaviour
     public static bool Paused;
 
     private float _timeSinceStartConsideringPauses;
+
+    public bool Finished;
+
+    [SerializeField]
+    private List<GameObject> fireworksList;
 
     // Use this for initialization
     private void Start()
@@ -33,14 +39,23 @@ public class BoiVoadorScript : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (Paused) return;
+        if (Paused || Finished) return;
 
         _timeSinceStartConsideringPauses += Time.deltaTime;
         transform.position = Vector3.Lerp(_origin, _target, _timeSinceStartConsideringPauses / TimeInSeconds);
         transform.position = transform.position + transform.up * Mathf.Sin (Time.time * Frequency) * Magnitude;
         if (transform.position.x >= _target.x)
         {
-            SceneManager.LoadScene("VictoryScene");
+            foreach (var fireworks in fireworksList) {
+                fireworks.SetActive(true);
+            }
+            Invoke("LoadVictoryScene", 5);
         }
     }
+
+    private void LoadVictoryScene()
+    {
+        SceneManager.LoadScene("VictoryScene");
+    }
+
 }
