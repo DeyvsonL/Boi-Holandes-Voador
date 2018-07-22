@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class InitialSceneManager : MonoBehaviour
 {
-	[SerializeField]
+	//[SerializeField]
 	private List<GameObject> historyObjects;
 	private int index;
 	
@@ -14,7 +14,7 @@ public class InitialSceneManager : MonoBehaviour
 	}
 	
 	private void Update ()
-	{
+	{		
 		if (!Input.GetButtonDown("Jump")) return;
 		if (index >= historyObjects.Count - 1)
 		{
