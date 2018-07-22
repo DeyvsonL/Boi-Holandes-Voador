@@ -19,6 +19,12 @@ public class SoundManager : MonoBehaviour {
     
     private double initLatency = .1d;
 
+    [SerializeField]
+    private AudioSource hammerOne;
+
+    [SerializeField]
+    private AudioSource hammerTwo;
+
     private void Start()
     {
 
@@ -37,5 +43,18 @@ public class SoundManager : MonoBehaviour {
     {
         secondGameMusicIntro.mute = false;
     }
-    
+
+    public void PlayHammerOne(float pitch = 1.0f)
+    {
+        hammerOne.pitch = pitch;
+        hammerOne.Play();
+    }
+
+    public void PlayHammerTwo(float pitch = 1.0f)
+    {
+        hammerTwo.pitch = pitch;
+        hammerTwo.Play();
+    }
+
+
 }
