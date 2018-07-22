@@ -18,7 +18,7 @@ public class InitialSceneManager : MonoBehaviour
 		if (!Input.GetButtonDown("Jump")) return;
 		if (index >= historyObjects.Count - 1)
 		{
-			SceneManager.LoadScene("SampleScene");
+			SceneManager.LoadScene("BridgeScene");
 			return;
 		}
 

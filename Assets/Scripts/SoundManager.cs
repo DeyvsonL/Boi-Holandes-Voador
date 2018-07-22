@@ -21,10 +21,12 @@ public class SoundManager : MonoBehaviour {
 
     private void Start()
     {
-        var playTime = AudioSettings.dspTime + initLatency;
+        var playTime = initLatency;
+
         gameMusicIntro.PlayDelayed( ( float )playTime );
         secondGameMusicIntro.PlayDelayed( ( float )playTime );
         playTime += ( double )gameMusicIntro.clip.length;
+
         gameMusicLoop.PlayDelayed( ( float )playTime );    
         secondGameMusicLoop.PlayDelayed( ( float )playTime );    
 
@@ -36,14 +38,6 @@ public class SoundManager : MonoBehaviour {
     void UnmuteSecondMusic()
     {
         secondGameMusicIntro.mute = false;
-    }
-
-    private void Update()
-    {
-        Debug.Log(string.Format("Playing inital {0} {1}", gameMusicIntro.isPlaying, gameMusicIntro.mute));
-        Debug.Log(string.Format("Playing inital {0} {1}", secondGameMusicIntro.isPlaying, secondGameMusicIntro.mute));
-        Debug.Log(string.Format("Playing inital {0} {1}", gameMusicLoop, gameMusicLoop.mute));
-        Debug.Log(string.Format("Playing inital {0} {1}", secondGameMusicLoop.isPlaying, secondGameMusicLoop.mute));
     }
     
 }

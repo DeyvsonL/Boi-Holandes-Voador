@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BridgeManagerScript : MonoBehaviour
 {
@@ -46,8 +48,8 @@ public class BridgeManagerScript : MonoBehaviour
 
 	private void GameOver()
 	{
-		print("Game Over!");
-		PauseGame();
+		//PauseGame();
+		SceneManager.LoadScene("GameOverScene");
 	}
 
 	private void PauseGame()
