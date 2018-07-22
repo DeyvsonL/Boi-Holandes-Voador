@@ -867,6 +867,10 @@ Prefab:
       propertyPath: playOnAwake
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1293337108068902, guid: 47c4697b1505742f99015d2267ce9d70, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47c4697b1505742f99015d2267ce9d70, type: 2}
   m_IsPrefabAsset: 0
@@ -923,6 +927,10 @@ Prefab:
         type: 2}
       propertyPath: playOnAwake
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709501053675292, guid: 2a618c01298df4a5eb92ebb03e7b50d6, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a618c01298df4a5eb92ebb03e7b50d6, type: 2}
@@ -2272,6 +2280,7 @@ GameObject:
   - component: {fileID: 1142766059}
   - component: {fileID: 1142766060}
   - component: {fileID: 1142766061}
+  - component: {fileID: 1142766062}
   m_Layer: 0
   m_Name: boi
   m_TagString: Untagged
@@ -2287,7 +2296,7 @@ Transform:
   m_GameObject: {fileID: 1142766058}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 46.300034, y: 23.52, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 0}
   m_Children:
   - {fileID: 329461025}
   - {fileID: 1398777566}
@@ -2329,7 +2338,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ec946c0f4527006469e160528f0a75ac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b5ebfd3a572b6784ba0f833cb65ffe20, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -2354,6 +2363,24 @@ MonoBehaviour:
   TimeInSeconds: 180
   Frequency: 0
   Magnitude: 0
+--- !u!95 &1142766062
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1142766058}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 18b64fa1f7ebcbf498f330590ccfdf98, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1154380336
 GameObject:
   m_ObjectHideFlags: 0
