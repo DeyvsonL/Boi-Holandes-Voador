@@ -7,6 +7,7 @@ public class BridgeSegmentScript : MonoBehaviour
 	[SerializeField] private float _initialChance = 0.001f;
 	[SerializeField] private float _finalChance = 0.006f;
 	public SegmentStatusEnum SegmentStatus = SegmentStatusEnum.Healthy;
+	public ParticleSystem particleSystem;
 	
 	public enum SegmentStatusEnum { Destroyed, Deteriorated, Healthy }
 
@@ -57,10 +58,12 @@ public class BridgeSegmentScript : MonoBehaviour
 			case SegmentStatusEnum.Healthy:
 				_spriteRenderer.sprite =  deterioratedSprite;
 				SegmentStatus = SegmentStatusEnum.Deteriorated;
+				particleSystem.Play();
 				break;
 			case SegmentStatusEnum.Deteriorated:
 				_spriteRenderer.sprite =  destroyedSprite;
 				SegmentStatus = SegmentStatusEnum.Destroyed;
+				particleSystem.Play();
 				break;
 			case SegmentStatusEnum.Destroyed:
 				break;

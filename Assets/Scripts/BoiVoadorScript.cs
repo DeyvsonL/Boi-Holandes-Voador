@@ -5,6 +5,9 @@ public class BoiVoadorScript : MonoBehaviour
     [SerializeField] public float TimeInSeconds = 10;
     private Vector3 _origin;
     private Vector3 _target;
+    
+    public float Frequency;  // Speed of sine movement
+    public float Magnitude;   // Size of sine movement
 
     public static bool Paused;
 
@@ -13,6 +16,9 @@ public class BoiVoadorScript : MonoBehaviour
     // Use this for initialization
     private void Start()
     {
+        Frequency = 1.0f;
+        Magnitude = 0.2f;
+        
         _timeSinceStartConsideringPauses = 0;
 
         _origin = Camera.main.ViewportToWorldPoint(new Vector3(0.1f, 0.7f, 0f));
@@ -30,5 +36,6 @@ public class BoiVoadorScript : MonoBehaviour
 
         _timeSinceStartConsideringPauses += Time.deltaTime;
         transform.position = Vector3.Lerp(_origin, _target, _timeSinceStartConsideringPauses / TimeInSeconds);
+        transform.position = transform.position + transform.up * Mathf.Sin (Time.time * Frequency) * Magnitude;
     }
 }
