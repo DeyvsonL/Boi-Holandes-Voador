@@ -7,7 +7,7 @@ public class GameOverMenuScript : MonoBehaviour {
 
 	public void TryAgain()
 	{
-		SceneManager.LoadScene("SampleScene");
+		SceneManager.LoadScene("BridgeScene");
 	}
 
 	public void ReturnToMainMenu()
