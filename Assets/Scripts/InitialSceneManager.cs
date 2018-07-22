@@ -5,9 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class InitialSceneManager : MonoBehaviour
 {
-	//[SerializeField]
-	private List<GameObject> historyObjects;
-	private int index;
+	public DialogueTriggerScript introScript;
+	public DialogueTriggerScript outroScript;
 	
 	private void Start () {
 		
@@ -15,14 +14,6 @@ public class InitialSceneManager : MonoBehaviour
 	
 	private void Update ()
 	{		
-		if (!Input.GetButtonDown("Jump")) return;
-		if (index >= historyObjects.Count - 1)
-		{
-			SceneManager.LoadScene("BridgeScene");
-			return;
-		}
-
-		historyObjects[index++].SetActive(false);
-		historyObjects[index].SetActive(true);
+		
 	}
 }
