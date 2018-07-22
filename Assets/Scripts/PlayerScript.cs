@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
@@ -64,6 +65,16 @@ public class PlayerScript : MonoBehaviour
             var pitchValue = selectedBridgeSegment.Repair();
             if (playerIndex == 0) soundManager.PlayHammerOne(pitchValue);
             else soundManager.PlayHammerTwo(pitchValue);
+			StartCoroutine(Timer());
 		}
 	}
+	
+	
+	IEnumerator Timer()
+	{
+		transform.Rotate (Vector3.forward * 45);
+		yield return new WaitForSeconds(0.15f);
+		transform.Rotate (Vector3.forward * -45);
+	}
 }
+

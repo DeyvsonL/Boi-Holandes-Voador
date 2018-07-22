@@ -297,7 +297,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -322,7 +322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
+  destroyedSprite: {fileID: 21300000, guid: 6faa2ee3909cd514db99c385e1542274, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   healthySprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   isPillar: 0
@@ -806,7 +806,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -999,7 +999,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 03b5a550826486b48a74d09552ca1f48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1024,7 +1024,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
+  destroyedSprite: {fileID: 21300000, guid: 6faa2ee3909cd514db99c385e1542274, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   healthySprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   isPillar: 0
@@ -1098,7 +1098,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
+  destroyedSprite: {fileID: 21300000, guid: 6faa2ee3909cd514db99c385e1542274, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   healthySprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   isPillar: 0
@@ -1162,7 +1162,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1554,8 +1554,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  destroyedSprite: {fileID: 21300000, guid: 56a5e7670e2451a499c64c5aea54c57e, type: 3}
-  deterioratedSprite: {fileID: 21300000, guid: 40aa6eebf4f99194ea1df1195400acef, type: 3}
+  destroyedSprite: {fileID: 21300000, guid: 9536ba3ae96ec43498d8a5ba7c8bba7f, type: 3}
+  deterioratedSprite: {fileID: 21300000, guid: 5be37737e3e067845a85e088136b02fa, type: 3}
   healthySprite: {fileID: 21300000, guid: ca7ace5728faa82468d21c64695a49a2, type: 3}
   isPillar: 1
   boiVoador: {fileID: 1142766061}
@@ -1738,7 +1738,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
+  destroyedSprite: {fileID: 21300000, guid: 6faa2ee3909cd514db99c385e1542274, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   healthySprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   isPillar: 0
@@ -1802,7 +1802,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2010,8 +2010,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  destroyedSprite: {fileID: 21300000, guid: 56a5e7670e2451a499c64c5aea54c57e, type: 3}
-  deterioratedSprite: {fileID: 21300000, guid: 40aa6eebf4f99194ea1df1195400acef, type: 3}
+  destroyedSprite: {fileID: 21300000, guid: 9536ba3ae96ec43498d8a5ba7c8bba7f, type: 3}
+  deterioratedSprite: {fileID: 21300000, guid: 5be37737e3e067845a85e088136b02fa, type: 3}
   healthySprite: {fileID: 21300000, guid: ca7ace5728faa82468d21c64695a49a2, type: 3}
   isPillar: 1
   boiVoador: {fileID: 1142766061}
@@ -2240,7 +2240,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2265,7 +2265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
+  destroyedSprite: {fileID: 21300000, guid: 6faa2ee3909cd514db99c385e1542274, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   healthySprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   isPillar: 0
@@ -2638,7 +2638,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2663,7 +2663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
+  destroyedSprite: {fileID: 21300000, guid: 6faa2ee3909cd514db99c385e1542274, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   healthySprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   isPillar: 0
@@ -3026,7 +3026,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3051,7 +3051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
+  destroyedSprite: {fileID: 21300000, guid: 6faa2ee3909cd514db99c385e1542274, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   healthySprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   isPillar: 0
@@ -3239,8 +3239,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  destroyedSprite: {fileID: 21300000, guid: 56a5e7670e2451a499c64c5aea54c57e, type: 3}
-  deterioratedSprite: {fileID: 21300000, guid: 40aa6eebf4f99194ea1df1195400acef, type: 3}
+  destroyedSprite: {fileID: 21300000, guid: 9536ba3ae96ec43498d8a5ba7c8bba7f, type: 3}
+  deterioratedSprite: {fileID: 21300000, guid: 5be37737e3e067845a85e088136b02fa, type: 3}
   healthySprite: {fileID: 21300000, guid: ca7ace5728faa82468d21c64695a49a2, type: 3}
   isPillar: 1
   boiVoador: {fileID: 1142766061}
@@ -3361,8 +3361,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  destroyedSprite: {fileID: 21300000, guid: 56a5e7670e2451a499c64c5aea54c57e, type: 3}
-  deterioratedSprite: {fileID: 21300000, guid: 40aa6eebf4f99194ea1df1195400acef, type: 3}
+  destroyedSprite: {fileID: 21300000, guid: 9536ba3ae96ec43498d8a5ba7c8bba7f, type: 3}
+  deterioratedSprite: {fileID: 21300000, guid: 5be37737e3e067845a85e088136b02fa, type: 3}
   healthySprite: {fileID: 21300000, guid: ca7ace5728faa82468d21c64695a49a2, type: 3}
   isPillar: 1
   boiVoador: {fileID: 1142766061}
@@ -3439,7 +3439,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 5, y: -4.899994}
+  m_AnchoredPosition: {x: 5, y: -4.9000244}
   m_SizeDelta: {x: 280, y: 280}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1767160351
@@ -3566,7 +3566,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3591,7 +3591,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
+  destroyedSprite: {fileID: 21300000, guid: 6faa2ee3909cd514db99c385e1542274, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   healthySprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   isPillar: 0
@@ -3783,7 +3783,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3808,7 +3808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
+  destroyedSprite: {fileID: 21300000, guid: 6faa2ee3909cd514db99c385e1542274, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   healthySprite: {fileID: 21300000, guid: e8a0629fab206814f9007d9c5e544882, type: 3}
   isPillar: 0
@@ -4179,8 +4179,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialChance: 0.001
   _finalChance: 0.006
-  destroyedSprite: {fileID: 21300000, guid: 56a5e7670e2451a499c64c5aea54c57e, type: 3}
-  deterioratedSprite: {fileID: 21300000, guid: 40aa6eebf4f99194ea1df1195400acef, type: 3}
+  destroyedSprite: {fileID: 21300000, guid: 9536ba3ae96ec43498d8a5ba7c8bba7f, type: 3}
+  deterioratedSprite: {fileID: 21300000, guid: 5be37737e3e067845a85e088136b02fa, type: 3}
   healthySprite: {fileID: 21300000, guid: ca7ace5728faa82468d21c64695a49a2, type: 3}
   isPillar: 1
   boiVoador: {fileID: 1142766061}
