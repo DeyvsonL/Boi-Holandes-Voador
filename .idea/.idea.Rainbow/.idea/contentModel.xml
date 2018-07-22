@@ -3,17 +3,101 @@
   <component name="ContentModelStore">
     <e p="C:\Users\lavin\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_Rainbow.567607351.00" t="ExcludeRecursive" />
     <e p="C:\Users\lavin\Documents\Rainbow" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="AudienceNetwork" t="Include">
+          <e p="Audience Network README.txt" t="Include" />
+          <e p="Editor" t="Include">
+            <e p="Android" t="Include">
+              <e p="DefaultAndroidManifest.xml" t="Include" />
+              <e p="ManifestMod.cs" t="Include" />
+            </e>
+            <e p="AudienceNetworkBuild.cs" t="Include" />
+            <e p="AudienceNetworkConsoleEndpoint.cs" t="Include" />
+            <e p="AudienceNetworkPostprocess.cs" t="Include" />
+            <e p="AudienceNetworkSettingsEditor.cs" t="Include" />
+            <e p="Utility.cs" t="Include" />
+          </e>
+          <e p="Library" t="Include">
+            <e p="AdChoices.cs" t="Include" />
+            <e p="AdHandler.cs" t="Include" />
+            <e p="AdManager.cs" t="Include" />
+            <e p="AdPanel.cs" t="Include" />
+            <e p="AdQuad.cs" t="Include" />
+            <e p="AdSettings.cs" t="Include" />
+            <e p="AdUtility.cs" t="Include" />
+            <e p="AdView.cs" t="Include" />
+            <e p="InterstitialAd.cs" t="Include" />
+            <e p="NativeAd.cs" t="Include" />
+            <e p="RewardedVideoAd.cs" t="Include" />
+            <e p="SdkVersion.cs" t="Include" />
+          </e>
+          <e p="Plugins" t="Include">
+            <e p="Android" t="Include">
+              <e p="AndroidManifest.xml" t="Include" />
+            </e>
+          </e>
+          <e p="Samples" t="Include">
+            <e p="Banner" t="Include">
+              <e p="AdViewTest.cs" t="Include" />
+            </e>
+            <e p="InGameAd" t="Include">
+              <e p="AdCamera.cs" t="Include" />
+              <e p="SimpleTouchPad.cs" t="Include" />
+            </e>
+            <e p="Interstitial" t="Include">
+              <e p="InterstitialAdTest.cs" t="Include" />
+            </e>
+            <e p="NativeAd" t="Include">
+              <e p="NativeAdTest.cs" t="Include" />
+            </e>
+            <e p="RewardedVideo" t="Include">
+              <e p="RewardedVideoAdTest.cs" t="Include" />
+            </e>
+          </e>
+          <e p="TestResult.xml" t="Include" />
+        </e>
+        <e p="FacebookSDK" t="Include">
+          <e p="Examples" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="ConsoleBase.cs" t="Include" />
+              <e p="LogView.cs" t="Include" />
+              <e p="MenuBase.cs" t="Include" />
+              <e p="SubMenus" t="Include">
+                <e p="AccessTokenMenu.cs" t="Include" />
+                <e p="AppEvents.cs" t="Include" />
+                <e p="AppInvites.cs" t="Include" />
+                <e p="AppLinks.cs" t="Include" />
+                <e p="AppRequests.cs" t="Include" />
+                <e p="DialogShare.cs" t="Include" />
+                <e p="GraphRequest.cs" t="Include" />
+                <e p="MainMenu.cs" t="Include" />
+                <e p="Pay.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="link.xml" t="Include" />
+        </e>
+        <e p="HitButton.cs" t="Include" />
+        <e p="PlayServicesResolver" t="Include">
+          <e p="Editor" t="Include">
+            <e p="play-services-resolver_v1.2.72.0.txt" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="BoiVoadorScript.cs" t="Include" />
           <e p="BridgeManagerScript.cs" t="Include" />
           <e p="BridgeSegmentScript.cs" t="Include" />
+          <e p="FacebookScript.cs" t="Include" />
+          <e p="GameOverMenuScript.cs" t="Include" />
           <e p="InitialSceneManager.cs" t="Include" />
+          <e p="MainMenuScript.cs" t="Include" />
           <e p="PeopleManager.cs" t="Include" />
           <e p="PersonMoviment.cs" t="Include" />
           <e p="PlayerScript.cs" t="Include" />
           <e p="SoundManager.cs" t="Include" />
+          <e p="VictoryMenuScript.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
