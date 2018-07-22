@@ -1280,4 +1280,4 @@ MonoBehaviour:
   hammerTwo: {fileID: 82874059671683444}
   cowOne: {fileID: 82529542347035636}
   cowTwo: {fileID: 82265227750052474}
-  cowInterval: {x: 0, y: 0}
+  cowInterval: {x: 2, y: 5}
