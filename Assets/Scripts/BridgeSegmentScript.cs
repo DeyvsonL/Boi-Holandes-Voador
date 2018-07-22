@@ -5,7 +5,7 @@ using Random = UnityEngine.Random;
 public class BridgeSegmentScript : MonoBehaviour
 {
 	[SerializeField] private float _initialChance = 0.001f;
-	[SerializeField] private float _finalChance = 0.006f;
+	[SerializeField] private float _finalChance = 0.004f;
 	public SegmentStatusEnum SegmentStatus = SegmentStatusEnum.Healthy;
 	
 	public enum SegmentStatusEnum { Destroyed, Deteriorated, Healthy }

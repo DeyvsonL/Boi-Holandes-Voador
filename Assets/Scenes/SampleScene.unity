@@ -320,8 +320,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3a03de22b98da143b08f71771eb4f5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _initialChance: 0.2
-  _finalChance: 0.6
+  _initialChance: 0.001
+  _finalChance: 0.006
   SegmentStatus: 2
   destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
@@ -857,8 +857,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3a03de22b98da143b08f71771eb4f5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _initialChance: 0.2
-  _finalChance: 0.6
+  _initialChance: 0.001
+  _finalChance: 0.006
   SegmentStatus: 2
   destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
@@ -930,8 +930,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3a03de22b98da143b08f71771eb4f5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _initialChance: 0.2
-  _finalChance: 0.6
+  _initialChance: 0.001
+  _finalChance: 0.006
   SegmentStatus: 2
   destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
@@ -1568,8 +1568,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3a03de22b98da143b08f71771eb4f5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _initialChance: 0.2
-  _finalChance: 0.6
+  _initialChance: 0.001
+  _finalChance: 0.006
   SegmentStatus: 2
   destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
@@ -2094,8 +2094,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3a03de22b98da143b08f71771eb4f5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _initialChance: 0.2
-  _finalChance: 0.6
+  _initialChance: 0.001
+  _finalChance: 0.006
   SegmentStatus: 2
   destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
@@ -2468,8 +2468,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3a03de22b98da143b08f71771eb4f5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _initialChance: 0.2
-  _finalChance: 0.6
+  _initialChance: 0.001
+  _finalChance: 0.006
   SegmentStatus: 2
   destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
@@ -3322,8 +3322,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3a03de22b98da143b08f71771eb4f5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _initialChance: 0.2
-  _finalChance: 0.6
+  _initialChance: 0.001
+  _finalChance: 0.006
   SegmentStatus: 2
   destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
@@ -3539,8 +3539,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3a03de22b98da143b08f71771eb4f5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _initialChance: 0.2
-  _finalChance: 0.6
+  _initialChance: 0.001
+  _finalChance: 0.006
   SegmentStatus: 2
   destroyedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
   deterioratedSprite: {fileID: 21300000, guid: a56cbc57550ab714bb711d0c6b5d81db, type: 3}
