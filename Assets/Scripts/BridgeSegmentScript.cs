@@ -6,10 +6,11 @@ public class BridgeSegmentScript : MonoBehaviour
 {
 	[SerializeField] private float _initialChance = 0.001f;
 	[SerializeField] private float _finalChance = 0.006f;
-	public SegmentStatusEnum SegmentStatus = SegmentStatusEnum.Healthy;
+	private SegmentStatusEnum _segmentStatus = SegmentStatusEnum.Healthy;
+		
 	public ParticleSystem particleSystem;
 	
-	public enum SegmentStatusEnum { Destroyed, Deteriorated, Healthy }
+	public enum SegmentStatusEnum { Healthy = 0, Deteriorated = 1, Destroyed = 2 }
 
 	public static bool Paused = false;
 
@@ -23,6 +24,12 @@ public class BridgeSegmentScript : MonoBehaviour
 
     [SerializeField]
     private BoiVoadorScript boiVoador;
+
+	public SegmentStatusEnum SegmentStatus
+	{
+		get { return _segmentStatus; }
+		private set { _segmentStatus = value; }
+	}
 
 	// Use this for initialization
 	private void Start ()
@@ -53,16 +60,16 @@ public class BridgeSegmentScript : MonoBehaviour
 
 	private void Deteriorate()
 	{
-		switch (SegmentStatus)
+		switch (_segmentStatus)
 		{
 			case SegmentStatusEnum.Healthy:
 				_spriteRenderer.sprite =  deterioratedSprite;
-				SegmentStatus = SegmentStatusEnum.Deteriorated;
+				_segmentStatus = SegmentStatusEnum.Deteriorated;
 				particleSystem.Play();
 				break;
 			case SegmentStatusEnum.Deteriorated:
 				_spriteRenderer.sprite =  destroyedSprite;
-				SegmentStatus = SegmentStatusEnum.Destroyed;
+				_segmentStatus = SegmentStatusEnum.Destroyed;
 				particleSystem.Play();
 				break;
 			case SegmentStatusEnum.Destroyed:
@@ -75,17 +82,17 @@ public class BridgeSegmentScript : MonoBehaviour
 	public void Repair()
 	{
 		print("Repairing bridge segment!");
-		switch (SegmentStatus)
+		switch (_segmentStatus)
 		{
 			case SegmentStatusEnum.Healthy:
 				break;
 			case SegmentStatusEnum.Deteriorated:
 				_spriteRenderer.sprite =  healthySprite;
-				SegmentStatus = SegmentStatusEnum.Healthy;
+				_segmentStatus = SegmentStatusEnum.Healthy;
 				break;
 			case SegmentStatusEnum.Destroyed:
 				_spriteRenderer.sprite =  deterioratedSprite;
-				SegmentStatus = SegmentStatusEnum.Deteriorated;
+				_segmentStatus = SegmentStatusEnum.Deteriorated;
 				break;
 			default:
 				throw new ArgumentOutOfRangeException();

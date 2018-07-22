@@ -18,27 +18,39 @@ public class BridgeManagerScript : MonoBehaviour
 	// Use this for initialization
 	private void Start ()
 	{
+		GetMaxHealth();
 		UpdateBridgeHealth();
-		_maxHealth = _health;
 		HealthBar.fillAmount = _health / _maxHealth;
+	}
+
+	private void GetMaxHealth()
+	{
+		foreach(var segment in _bridgeRoadSegments)
+		{
+			_maxHealth += (int)BridgeSegmentScript.SegmentStatusEnum.Destroyed;
+		}
+
+		foreach(var segment in _bridgePierSegments)
+		{
+			_maxHealth += (int)BridgeSegmentScript.SegmentStatusEnum.Destroyed;
+		}
+
+		_maxHealth = _maxHealth/2 - 1;
 	}
 
 	private void UpdateBridgeHealth()
 	{
-		_health = 0;
+		_health = _maxHealth;
 		
 		foreach(var segment in _bridgeRoadSegments)
 		{
-			_health += (int)segment.SegmentStatus;
+			_health -= (int)segment.SegmentStatus;
 		}
-		
+
 		foreach(var segment in _bridgePierSegments)
 		{
-			print(segment.SegmentStatus);
-			_health += (int)segment.SegmentStatus;
+			_health -= (int)segment.SegmentStatus;
 		}
-		
-//		print("Current health:" + _health);
 		
 		if (_health <= 0)
 		{

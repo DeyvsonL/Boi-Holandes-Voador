@@ -44,8 +44,9 @@ public class PeopleManager : MonoBehaviour {
         var positionIndex = UnityEngine.Random.Range(0, spots.Count);
         var position = spots[positionIndex].transform;
         var prefabIndex = UnityEngine.Random.Range(0, personPrefabs.Count);
-        Instantiate(personPrefabs[prefabIndex], position.position, position.rotation);
+        var person = Instantiate(personPrefabs[prefabIndex], position.position, position.rotation);
         NextSpawn = UnityEngine.Random.Range(currentSpawnInterval.x, currentSpawnInterval.y);
+		Destroy(person, 25);
 
     }
 }
