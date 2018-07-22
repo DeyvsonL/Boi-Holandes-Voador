@@ -6,14 +6,8 @@ using UnityEngine.SceneManagement;
 public class InitialSceneManager : MonoBehaviour
 {
 	public DialogueTriggerScript introScript;
-	public DialogueTriggerScript outroScript;
 	
 	private void Start () {
 		introScript.TriggerDialogue();
-	}
-
-	void Update()
-	{
-		
 	}
 }

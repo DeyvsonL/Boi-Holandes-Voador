@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BridgeScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/LunetaScene.unity
+    guid: 1444a2678c6674389aa282b916da5eb2
+  - enabled: 1
+    path: Assets/Scenes/TimeTravelScene.unity
+    guid: 4a6aad8d267d94d3a8a2bcda104737b1
   m_configObjects: {}

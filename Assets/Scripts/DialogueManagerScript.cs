@@ -76,18 +76,21 @@ public class DialogueManagerScript : MonoBehaviour
 		var dialogElement = DialogueQueue.Dequeue();
 		NameText.text = dialogElement.name;
 
-		if (dialogElement.name == "Narrador")
+		if (dialogElement.name == "Narrador" || dialogElement.name == "Nassau")
 		{
+			Nassau.color = new Color(Nassau.color.r, Nassau.color.g, Nassau.color.b, 1f);
 			Guilherme.color = new Color(Guilherme.color.r, Guilherme.color.g, Guilherme.color.b, 0f);
 			Cristina.color = new Color(Cristina.color.r, Cristina.color.g, Cristina.color.b, 0f);
 		}
 		else if (dialogElement.name == "Cristina")
 		{
+			Nassau.color = new Color(Nassau.color.r, Nassau.color.g, Nassau.color.b, 0f);
 			Guilherme.color = new Color(Guilherme.color.r, Guilherme.color.g, Guilherme.color.b, 0f);
 			Cristina.color = new Color(Cristina.color.r, Cristina.color.g, Cristina.color.b, 1f);
 		}
 		else if (dialogElement.name == "Guilherme")
 		{
+			Nassau.color = new Color(Nassau.color.r, Nassau.color.g, Nassau.color.b, 0f);
 			Guilherme.color = new Color(Guilherme.color.r, Guilherme.color.g, Guilherme.color.b, 1f);
 			Cristina.color = new Color(Cristina.color.r, Cristina.color.g, Cristina.color.b, 0f);	
 		}
