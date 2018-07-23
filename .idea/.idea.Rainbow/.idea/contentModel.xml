@@ -85,10 +85,32 @@
             <e p="play-services-resolver_v1.2.72.0.txt" t="Include" />
           </e>
         </e>
+        <e p="RainMaker" t="Include">
+          <e p="Demo" t="Include">
+            <e p="DemoScript.cs" t="Include" />
+            <e p="DemoScript2D.cs" t="Include" />
+            <e p="DemoScriptStartRainOnSpaceBar.cs" t="Include" />
+          </e>
+          <e p="Editor" t="Include">
+            <e p="RainMakerEditor.cs" t="Include" />
+          </e>
+          <e p="Prefab" t="Include">
+            <e p="BaseRainScript.cs" t="Include" />
+            <e p="RainCollision.cs" t="Include" />
+            <e p="RainScript.cs" t="Include" />
+            <e p="RainScript2D.cs" t="Include" />
+            <e p="RainShader.shader" t="Include" />
+          </e>
+          <e p="Readme.txt" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
+          <e p="BoiVoadorMenuScript.cs" t="Include" />
           <e p="BoiVoadorScript.cs" t="Include" />
           <e p="BridgeManagerScript.cs" t="Include" />
           <e p="BridgeSegmentScript.cs" t="Include" />
+          <e p="DialogueManagerScript.cs" t="Include" />
+          <e p="DialogueScript.cs" t="Include" />
+          <e p="DialogueTriggerScript.cs" t="Include" />
           <e p="FacebookScript.cs" t="Include" />
           <e p="GameOverMenuScript.cs" t="Include" />
           <e p="InitialSceneManager.cs" t="Include" />
