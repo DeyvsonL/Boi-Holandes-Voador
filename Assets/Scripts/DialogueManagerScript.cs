@@ -32,11 +32,12 @@ public class DialogueManagerScript : MonoBehaviour
 
 	void Start()
 	{
+		
 	}
 
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Space))
+		if (Input.GetKeyDown(KeyCode.Space) && Time.fixedTime > 1)
 		{
 			if (DialogueText.text != currentText)
 			{
@@ -64,6 +65,12 @@ public class DialogueManagerScript : MonoBehaviour
 			DialogueQueue.Enqueue(element);
 		}
 
+		StartCoroutine(DialogueAfterDelay());
+	}
+
+	IEnumerator DialogueAfterDelay()
+	{
+		yield return new WaitForSeconds(1);
 		DisplayNextSentence();
 	}
 
@@ -80,7 +87,7 @@ public class DialogueManagerScript : MonoBehaviour
 
 		AudioSource.clip = dialogElement.audioClip;
 		AudioSource.Play();
-
+		print(dialogElement.name);
 		if (dialogElement.name == "Narrador" || dialogElement.name == "Nassau")
 		{
 			if (dialogElement.name == "Nassau")
@@ -92,9 +99,11 @@ public class DialogueManagerScript : MonoBehaviour
 		}
 		else if (dialogElement.name == "Cristina")
 		{
+			print("Entrou no if");
 			Nassau.color = new Color(Nassau.color.r, Nassau.color.g, Nassau.color.b, 0f);
 			Guilherme.color = new Color(Guilherme.color.r, Guilherme.color.g, Guilherme.color.b, 0f);
 			Cristina.color = new Color(Cristina.color.r, Cristina.color.g, Cristina.color.b, 1f);
+			print(Cristina.color);
 		}
 		else if (dialogElement.name == "Guilherme")
 		{
@@ -122,8 +131,41 @@ public class DialogueManagerScript : MonoBehaviour
 	private void EndDialogue()
 	{
 		Animator.SetTrigger("TerminarDialogo");
-		SceneManager.LoadScene(SceneToLoadWhenFinished);
 		Finished = true;
+		StartCoroutine(SceneLoadAfterDelay());
+		StartCoroutine(FadeTo(Cristina, 0f, 1f));
+	}
+
+	IEnumerator SceneLoadAfterDelay()
+	{
+		yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(SceneToLoadWhenFinished);
+	}
+	
+	IEnumerator FadeTo(Image image, float targetOpacity, float duration) {
+
+		// Cache the current color of the material, and its initiql opacity.
+		Color color = image.color;
+		float startOpacity = color.a;
+
+		// Track how many seconds we've been fading.
+		float t = 0;
+
+		while(t < duration) {
+			// Step the fade forward one frame.
+			t += Time.deltaTime;
+			// Turn the time into an interpolation factor between 0 and 1.
+			float blend = Mathf.Clamp01(t / duration);
+
+			// Blend to the corresponding opacity between start & target.
+			color.a = Mathf.Lerp(startOpacity, targetOpacity, blend);
+
+			// Apply the resulting color to the material.
+			image.color = color;
+
+			// Wait one frame, and repeat.
+			yield return null;
+		}
 	}
 
 }
