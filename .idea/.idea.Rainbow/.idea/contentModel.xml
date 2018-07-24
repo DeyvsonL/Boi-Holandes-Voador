@@ -121,6 +121,7 @@
           <e p="PersonMoviment.cs" t="Include" />
           <e p="PlayerScript.cs" t="Include" />
           <e p="SoundManager.cs" t="Include" />
+          <e p="TimeTravelSceneScript.cs" t="Include" />
           <e p="VictoryMenuScript.cs" t="Include" />
         </e>
       </e>
