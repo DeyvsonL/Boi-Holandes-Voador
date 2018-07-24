@@ -12,5 +12,7 @@ public class DialogueElement
 	public string name;
 	[TextArea(3, 10)] 
 	public string sentence;
+
+	public AudioClip audioClip;
 }
 

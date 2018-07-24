@@ -22,6 +22,8 @@ public class DialogueManagerScript : MonoBehaviour
 	public bool Finished = true;
 
 	public string SceneToLoadWhenFinished;
+
+	public AudioSource AudioSource;
 	
 	void Awake()
 	{
@@ -76,6 +78,9 @@ public class DialogueManagerScript : MonoBehaviour
 		var dialogElement = DialogueQueue.Dequeue();
 		NameText.text = dialogElement.name;
 
+		AudioSource.clip = dialogElement.audioClip;
+		AudioSource.Play();
+
 		if (dialogElement.name == "Narrador" || dialogElement.name == "Nassau")
 		{
 			if (dialogElement.name == "Nassau")
@@ -87,19 +92,13 @@ public class DialogueManagerScript : MonoBehaviour
 		}
 		else if (dialogElement.name == "Cristina")
 		{
-			if (dialogElement.name == "Nassau")
-			{
-				Nassau.color = new Color(Nassau.color.r, Nassau.color.g, Nassau.color.b, 0f);
-			}
+			Nassau.color = new Color(Nassau.color.r, Nassau.color.g, Nassau.color.b, 0f);
 			Guilherme.color = new Color(Guilherme.color.r, Guilherme.color.g, Guilherme.color.b, 0f);
 			Cristina.color = new Color(Cristina.color.r, Cristina.color.g, Cristina.color.b, 1f);
 		}
 		else if (dialogElement.name == "Guilherme")
 		{
-			if (dialogElement.name == "Nassau")
-			{
-				Nassau.color = new Color(Nassau.color.r, Nassau.color.g, Nassau.color.b, 0f);
-			}
+			Nassau.color = new Color(Nassau.color.r, Nassau.color.g, Nassau.color.b, 0f);
 			Guilherme.color = new Color(Guilherme.color.r, Guilherme.color.g, Guilherme.color.b, 1f);
 			Cristina.color = new Color(Cristina.color.r, Cristina.color.g, Cristina.color.b, 0f);	
 		}

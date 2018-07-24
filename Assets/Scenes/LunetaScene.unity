@@ -586,6 +586,130 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 741207353}
+--- !u!1 &753402911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 753402913}
+  - component: {fileID: 753402912}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &753402912
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 753402911}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &753402913
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 753402911}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1667466768}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &823343608
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,34 +740,44 @@ MonoBehaviour:
   dialogueElements:
   - name: Cristina
     sentence: "Onde estamos\u2026? Isso\u2026 \xC9 Recife? \n"
+    audioClip: {fileID: 8300000, guid: b938ff82ff68b47bb88b2ef04356de25, type: 3}
   - name: Guilherme
     sentence: "Com certeza n\xE3o estamos em 2018 n\xE9?\n"
+    audioClip: {fileID: 8300000, guid: 40f08f7e19ca84cceac775b64b60b1c1, type: 3}
   - name: Nassau
     sentence: "Oh, temos visitantes estrangeiros na cidade Maur\xEDcia. Sejam bem-vindos,
       sou o Conde Johan Maurits van Nassau-Siegen, ou como me conhecem aqui, Maur\xEDcio
       de Nassau.\n"
+    audioClip: {fileID: 8300000, guid: a4dcaa39495634706b30ce61d8ba7bdb, type: 3}
   - name: Guilherme
     sentence: "Nassau? Isso vai resolver nossos problemas, Cristina! Me diga mais
       sobre voc\xEA, Conde!\n"
+    audioClip: {fileID: 8300000, guid: cec901bf248434bf39ad8c54fd05c349, type: 3}
   - name: Nassau
     sentence: "Oras, fui enviado atrav\xE9s da Companhia Neerlandesa das \xCDndias
       Ocidentais para administrar os dom\xEDnios holandeses no Brasil. \n"
+    audioClip: {fileID: 8300000, guid: 346d7b5ed6fc34ebebe3564a3d66425f, type: 3}
   - name: Cristina
     sentence: 'Mas em que dia estamos?
 
 '
+    audioClip: {fileID: 8300000, guid: 98b396e47b2674c3e80e0d574355d126, type: 3}
   - name: Nassau
     sentence: "Hoje, dia 28 de fevereiro de 1644, iremos inaugurar a ponte que ligar\xE1
       a cidade Maur\xEDcia com o continente - ap\xF3s quase 3 anos de constru\xE7\xE3o
       e o Conselho criticando a demora. \n"
+    audioClip: {fileID: 8300000, guid: 8106bcc970bb9444dbca02e02b2ef938, type: 3}
   - name: Nassau
     sentence: "Apesar de ter utilizado os meus recursos para completar a ponte\u2026\nIrei
       retomar tudo! Pois o boi estar\xE1 voando e as pessoas ir\xE3o pagar o ped\xE1gio
       da minha ponte para v\xEA-lo.\n"
+    audioClip: {fileID: 8300000, guid: 1fe6c438dc8c740a69d324d5442a790e, type: 3}
   - name: Guilherme
     sentence: "Ser\xE1 que ele se deu conta que a ponte t\xE1 cheia de rachaduras?"
+    audioClip: {fileID: 8300000, guid: 671a06cef4b2f4052b43851a29baba24, type: 3}
   - name: Cristina
     sentence: Acho que a gente vai ter que ajudar.
+    audioClip: {fileID: 8300000, guid: 6c0f7d6af8ebc406483dabf74e3c2acd, type: 3}
 --- !u!4 &823343610
 Transform:
   m_ObjectHideFlags: 0
@@ -906,6 +1040,7 @@ MonoBehaviour:
   Cristina: {fileID: 1438332564}
   Finished: 1
   SceneToLoadWhenFinished: BridgeScene
+  AudioSource: {fileID: 753402912}
 --- !u!4 &1667466768
 Transform:
   m_ObjectHideFlags: 0
@@ -917,6 +1052,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 823343610}
+  - {fileID: 753402913}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
