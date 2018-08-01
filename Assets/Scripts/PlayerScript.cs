@@ -29,12 +29,26 @@ public class PlayerScript : MonoBehaviour
 
 	private void Move(bool isRight)
 	{
-		if (isRight && _playerPosition < Objects.Count - 1)
+		if (isRight)
 		{
-			SetPosition(_playerPosition + 1);
-		} else if(!isRight && _playerPosition > 0)
+			if (_playerPosition < Objects.Count - 1)
+			{
+				SetPosition(_playerPosition + 1);	
+			}
+			else
+			{
+				SetPosition(0);
+			}
+		} else if(!isRight)
 		{
-			SetPosition(_playerPosition - 1);
+			if (_playerPosition > 0)
+			{
+				SetPosition(_playerPosition - 1);
+			}
+			else
+			{
+				SetPosition(Objects.Count - 1);
+			}
 		}
 	}
 

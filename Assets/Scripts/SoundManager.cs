@@ -36,7 +36,7 @@ public class SoundManager : MonoBehaviour {
 
     private void Start()
     {
-
+        Debug.Log("Playing intro music!");
         gameMusicIntro.Play();
         secondGameMusicIntro.Play();
 
